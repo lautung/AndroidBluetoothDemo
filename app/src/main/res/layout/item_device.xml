@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="80dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        app:srcCompat="@drawable/ic_bluetooth_black_24"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unknown"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="BE:AC:10:00:00:01"
+
+            android:textSize="12sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <TextView
+        android:id="@+id/tv_rssi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:text="dBm" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
